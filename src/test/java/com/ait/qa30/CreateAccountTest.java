@@ -22,17 +22,17 @@ public class CreateAccountTest extends TestBase {
         //enter Email
         driver.findElement(By.xpath("//input[@id='Email'] ")).click();
         driver.findElement(By.xpath("//input[@id='Email'] ")).clear();
-        driver.findElement(By.xpath("//input[@id='Email'] ")).sendKeys("test4@com.de");
+        driver.findElement(By.xpath("//input[@id='Email'] ")).sendKeys("test5@com.de");
         //enter Password
         driver.findElement(By.xpath("//input[@id='Password'] ")).click();
         driver.findElement(By.xpath("//input[@id='Password'] ")).clear();
-        driver.findElement(By.xpath("//input[@id='Password'] ")).sendKeys("Manuel12345$");
+        driver.findElement(By.xpath("//input[@id='Password'] ")).sendKeys("Manuel123456$");
         //enter confirm password
         driver.findElement(By.xpath("//input[@id='ConfirmPassword'] ")).click();
         driver.findElement(By.xpath("//input[@id='ConfirmPassword'] ")).clear();
-        driver.findElement(By.xpath("//input[@id='ConfirmPassword'] ")).sendKeys("Manuel12345$");
+        driver.findElement(By.xpath("//input[@id='ConfirmPassword'] ")).sendKeys("Manuel123456$");
         //click on Register
-       // driver.findElement(By.name("register-button")).click();
+        driver.findElement(By.name("register-button")).click();
         //assert Log out button is present
         Assert.assertTrue(isElementPresent(By.cssSelector(" [href='/logout']")));
 
